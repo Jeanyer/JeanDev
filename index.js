@@ -189,7 +189,49 @@ client.on("message", function(message) {
   
     
     
-  
+  (command === "rules"){
+
+    const embed = new Discord.MessageEmbed()
+
+      .setTitle("Normas 📜")
+
+      .setColor(0xff0000)
+
+      .setThumbnail()
+
+      .setDescription("Estas son las normas que deberas seguir:")
+
+      .addField("☑ | Respetar a todos los usuarios.", "Debes respetar a los demas si quieres ser respetado.")
+
+      .addField("☑ | Manten un ambiente tranquilo en el servidor", "No se permiten temas polémicos que causen una discusión.")
+
+      .addField("☑ | Cero tolerancia al shitpost.", " No esta permitido el shitpost, si llegas a publicarlo, seras sancionado.")
+
+      .addField("☑ | Usar cada canal para su respectivo uso.", "Debes respetar el uso de los canales.")
+
+      .addField("☑ | Las menciones innecesarias quedan prohibidas", "Esa persona puede estar ocupada, solo mencionala si necesitas algo de esta.")
+
+      .addField("☑ | No NSFW", "Queda estrictamente prohibido publicar contenido NSFW o Gore.")
+
+      .addField("☑ | No hacer Flood", "El Flood es un conjunto de mensajes o caracteres repetidos. Debes evitar hacer eso.")
+
+      .addField("☑ | No hacerse pasar por ningún usuario/compañía famosa.", "Esto queda Prohibido para evitar problemas.")
+
+      .addField("☑ | No mandes información falsa, si no tienes seguro de que esta sea verdad investiga de que lo sea.", "La información falsa puede confundir a usuarios.")
+
+      .addField("☑ | Nada de burlas o insultos a alguna persona importante de la comunidad.", "Queda TOTALMENTE prohibido cualquier tipo de burla hacia alguna persona importante de la comunidad (la sancion dependera de que tan grave).")
+
+      .addField("El incumplimiento de las reglas puede llegar a ser sancionado, puedes ganar Warn, Mute o Ban", "El tiempo de muted/ban dependeria de la cantidad de strikes que tengas.")
+
+      .setFooter("Nintenderos Android Community")
+
+      .setImage("https://media.discordapp.net/attachments/841165838786101309/841463926423814154/Reglas_-_Nac.png?width=1080&height=484")
+
+    
+
+    message.channel.send(embed);
+
+  }  
   
 });
   
