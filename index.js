@@ -186,6 +186,25 @@ client.on("message", function(message) {
 
     message.channel.send(embed);
   }
+ 
+ if(command === "embedr"){
+    const embed = new Discord.MessageEmbed()
+      .setTitle("Roles Unicos")
+      .setColor(0xf8f8f9)
+      .setThumbnail("https://cdn.discordapp.com/attachments/638413072188571659/844967297403584562/g100d7.png")
+      .setDescription("Puedes conseguir roles extras solo cumpliendo los siguientes requisitos:")
+      .addField("Administracion", "<@&688913732016930897> Son las personas encargadas de que el Reino funcione correctamente **(PUESTOS LLENOS)**")
+      .addField("Moderacion", "<@&844594872098750494> Son las personas que mantienen el orden por aqui **(PUESTOS LLENOS)**")
+      .addField("NITRO BOOSTER", "<@&681327762673631243> Es exclusivo para los que boostearon el Reino con **Discord Nitro**")
+      .addField("Equipo", "<@&682295726973386766> Rol unico para el equipo de **Uber Studios**")
+      .addField("Sobreviviente", "<@&634418596931436564> Exclusivo para los miembros del primer server de Uber **(Imposible de conseguir)**.")
+      .addField("Equipo", "<@&682295726973386766> Rol unico para el equipo de **Uber Studios**")
+      .setImage("https://cdn.discordapp.com/attachments/638413072188571659/844970156915687539/IMG_20210520_110933.jpg")
+      .setFooter("Reino Uberiano")
+
+
+      message.channel.send(embed);
+  }
   
     
     
